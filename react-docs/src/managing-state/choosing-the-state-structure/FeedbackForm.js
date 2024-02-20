@@ -2,18 +2,15 @@ import { useState } from "react";
 
 export default function FeedbackForm() {
   const [text, setText] = useState("");
-  const [isSending, setIsSending] = useState(false);
-  const [isSent, setIsSent] = useState(false);
-
+  const [status, setStatus] = useState("typing"); // typing|sending|sent
   async function handleSubmit(e) {
     e.preventDefault();
-    setIsSending(true);
+    setStatus("sending");
     await sendMessage(text);
-    setIsSending(false);
-    setIsSent(true);
+    setStatus("sent");
   }
 
-  if (isSent) {
+  if (status === "sent") {
     return <h1>Thanks for feedback!</h1>;
   }
 
@@ -21,15 +18,15 @@ export default function FeedbackForm() {
     <form onSubmit={handleSubmit}>
       <p>How was your stay at The Prancing Pony?</p>
       <textarea
-        disabled={isSending}
+        disabled={status === "sending"}
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
       <br />
-      <button disabled={isSending} type="submit">
+      <button disabled={status === "sending"} type="submit">
         Send
       </button>
-      {isSending && <p>Sending...</p>}
+      {status === "sending" && <p>Sending...</p>}
     </form>
   );
 }
@@ -37,6 +34,6 @@ export default function FeedbackForm() {
 // Pretend to send a message.
 function sendMessage(text) {
   return new Promise((resolve) => {
-    setTimeout(resolve, 2000);
+    setTimeout(resolve, 1000);
   });
 }

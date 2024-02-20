@@ -19,16 +19,31 @@ import Form56 from "./managing-state/reacting-to-input-with-state/ImperativeForm
 import Picture from "./managing-state/reacting-to-input-with-state/Picture";
 import EditProfile from "./managing-state/reacting-to-input-with-state/EditProfile";
 import MovingDot from "./managing-state/choosing-the-state-structure/MovingDot";
+import FeedbackForm from "./managing-state/choosing-the-state-structure/FeedbackForm";
+import RedundantState from "./managing-state/choosing-the-state-structure/RedundantState";
+import Menu from "./managing-state/choosing-the-state-structure/Menu";
+import Accordion from "./managing-state/sharing-state-between-components/Accordian";
+import SyncedInputs from "./managing-state/sharing-state-between-components/SyncedInputs";
+import FilterableList from "./managing-state/sharing-state-between-components/FilterableLists";
+import RenderTree from "./managing-state/preserving-and-resetting-state/RenderTree";
+import ComponentAtSamePosition from "./managing-state/preserving-and-resetting-state/ComponentAtSamePosition";
+import Scoreboard from "./managing-state/preserving-and-resetting-state/ResetStateAtSamePosition";
+import Messenger from "./managing-state/preserving-and-resetting-state/messanger/Messenger";
+import Problem1 from "./managing-state/preserving-and-resetting-state/Problem1";
+import Problem2 from "./managing-state/preserving-and-resetting-state/Problem2";
+import ContactManager from "./managing-state/preserving-and-resetting-state/problem3/Problem3";
+import ClearImage from "./managing-state/preserving-and-resetting-state/ClearImage";
 
 
 */
+
 import "./App.css";
-import FeedbackForm from "./managing-state/choosing-the-state-structure/FeedbackForm";
+import ContactList from "./managing-state/preserving-and-resetting-state/problem5/ContactList";
 
 function App() {
   return (
     <div>
-      <FeedbackForm />
+      <ContactList />
     </div>
   );
 }
