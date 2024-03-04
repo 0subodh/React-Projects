@@ -33,17 +33,28 @@ import Problem1 from "./managing-state/preserving-and-resetting-state/Problem1";
 import Problem2 from "./managing-state/preserving-and-resetting-state/Problem2";
 import ContactManager from "./managing-state/preserving-and-resetting-state/problem3/Problem3";
 import ClearImage from "./managing-state/preserving-and-resetting-state/ClearImage";
-
+import ContactList from "./managing-state/preserving-and-resetting-state/problem5/ContactList";
+import TaskApp from "./managing-state/extracting-state-logic-into-reducer/TaskApp/TaskApp";
+import AppHeading from "./managing-state/passing-data-deeply-with-context/different-heading/AppHeading";
+import Gallery from "./describing-the-ui/importing-and-exporting/Gallery";
+import JSXExample2 from "./describing-the-ui/jsx-with-curly-braces/JSXExample2";
+import Clock from "./describing-the-ui/passing-props/Clock";
+import Problem1 from "./describing-the-ui/passing-props/Problem1";
+import TryOut from "./additional/TryOut";
+import Reference from './escape-hatches/referencing-values-with-Refs/Reference';
+import Chat from './escape-hatches/referencing-values-with-Refs/Chat';
+import StopWatch from './escape-hatches/referencing-values-with-Refs/StopWatch';
+import Toggle from './escape-hatches/referencing-values-with-Refs/Toggle';
 
 */
 
-import "./App.css";
-import ContactList from "./managing-state/preserving-and-resetting-state/problem5/ContactList";
+import './App.css';
+import Dashboard from './escape-hatches/referencing-values-with-Refs/Dashboard';
 
 function App() {
   return (
     <div>
-      <ContactList />
+      <Dashboard />
     </div>
   );
 }

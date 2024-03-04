@@ -2,3 +2,22 @@
   margin: 5px;
   font-size: 20px;
 }
+
+code {
+  font-size: 1.2em;
+}
+
+ul {
+  padding-inline-start: 20px;
+}
+
+.section {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.fancy {
+  border: 4px dashed pink;
+}
